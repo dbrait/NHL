@@ -5,6 +5,7 @@ library(dplyr)
 library(plyr)
 library(ggplot2)
 library(caret)
+library(e1071)
 
 AllEncompass = read.csv("AllEncompassing.csv")
 summary(AllEncompass)
