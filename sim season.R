@@ -51,7 +51,7 @@ test = filter(data, season %in% c(20132014, 20142015)
 
 
 
-#GDiff predictors
+#GDiff predictors (just used to determine how predictable it is and what matters)
 
 Logit <- glm(GDiff ~ Corsi_60 + Zone_Starts_Per + High_Danger_Scoring + Scoring_Chances_Perc + Shots_For_Perc+
                Pen_Diff + PDO + Faceoff_Win_Perc + Save_Perc + Shooting_Perc,  data=train)
@@ -74,6 +74,10 @@ rmse(LogitPred, GDiff)
 rmse(RForestPred, GDiff)
 rmse(BoostPred, GDiff)
 
+
+"""Need to determine what is projectible year to year:
+  Early hypothesis: Corsi, interval for players shooting percentage, interval for goalie save percentage,
+high scoring chances, shots blocked, penalties taken/drawn, faceoff win percentage
 
 #Set up datasets
 years <- c(2008, 2009, 2010, 2011, 2012, 2013)
