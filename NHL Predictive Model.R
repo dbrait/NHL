@@ -7,6 +7,9 @@ library(ggplot2)
 library(caret)
 library(e1071)
 
+#Line History
+LineHistory <- read.csv("Line History.csv")
+
 AllEncompass = read.csv("AllEncompassing.csv")
 summary(AllEncompass)
 
