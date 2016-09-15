@@ -6,3 +6,5 @@ Basic models and visualizations built around nhl advanced stats like corsi, fenw
 
 Attempt to use bayesian methods to adjust for goalie performances, using the expected shot chart for each goalie over their
 full career.  In the process of conducting a similar analysis with skaters and their shooting percentage. 
+
+Using opening and closing line odds from the last decade to predict against the line and total.
